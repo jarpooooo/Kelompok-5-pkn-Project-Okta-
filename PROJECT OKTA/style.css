@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+i,
+a,
+input,
+textarea {
+  color: whitesmoke !important;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.backgroundimg {
+  background-image: url("/img/89781.jpg");
+  height: 100vh;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.backgroundimgmateri1 {
+  background-image: url("/img/img1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.backgroundimgmateri2 {
+  background-image: url("/img/img2.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.backgroundimgmateri3 {
+  background-image: url("/img/img3.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.backgroundimgmateri4 {
+  background-image: url("/img/img4.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.backgroundimgmateri5 {
+  background-image: url("/img/img5.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.backgroundimgmateri6 {
+  background-image: url("/img/img6.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.backgroundimggradient {
+  background: #57c785;
+  background: linear-gradient(
+    180deg,
+    rgba(87, 199, 133, 0) 0%,
+    rgba(33, 33, 33, 1) 100%
+  );
+  height: 100vh;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.juduljumbo {
+  font-size: 4rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .juduljumbo {
+    font-size: 5rem;
+    font-family: "Bebas Neue", sans-serif;
+  }
+}
+
+@media (min-width: 992px) {
+  .juduljumbo {
+    font-size: 8rem;
+    font-family: "Bebas Neue", sans-serif;
+  }
+}
+
+
+.judulnavbar{
+    font-family: "Bebas Neue", sans-serif;
+}
+.sectjudul{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+.nav-item {
+    transition: all 0.5s;
+    border: 2px solid transparent;  
+}
+
+
+.nav-item:hover {
+    border: 2px solid whitesmoke;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+}
+
+.imgfilterblack{
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 0;
+    transition: 1s;
+}
+.imgfilterblack:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+
+.judulfooter {
+  font-size: 3rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .judulfooter {
+    font-size: 4rem;
+    font-family: "Bebas Neue", sans-serif;
+  }
+}
+
+@media (min-width: 992px) {
+  .judulfooter {
+    font-size: 6rem;
+    font-family: "Bebas Neue", sans-serif;
+  }
+}
+
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  background-color: #212529;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #6c757d;
+  transition: background-color 0.3s;
+}
+.cell:hover {
+  background-color: #495057;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  max-width: 320px;
+  margin: auto;
+}
+.winner {
+  background-color:#3B71CA !important;
+}
+
+
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 2/3; /* Uno cards are taller than wide */
+  perspective: 1000px;
+  margin: auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-card-back {
+  background-color: #3B71CA;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Responsive text on small devices */
+@media (max-width: 576px) {
+  .flip-card-back {
+    font-size: 1.2rem;
+  }
+}
+.watermark{
+  font-size: 0.7vw;
+}
+hr {
+  border: 1px whitesmoke solid;
+}
+.text-justify{
+  text-align: justify;
+}
+
+.icon-wrapper {
+  transition:  2s;
+  transform: scale(1);
+}
+
+.icon-wrapper:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+
+.winning-cell {
+  background-color: #d4edda;
+  color: #155724;
+  font-weight: bold;
+}
